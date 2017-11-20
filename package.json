@@ -1,0 +1,49 @@
+{
+  "name": "token-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babelify": "^8.0.0",
+    "bignumber.js": "^4.1.0",
+    "browserify": "^14.5.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.1",
+    "jquery": "~3.2.1",
+    "mocha": "^4.0.1",
+    "truffle": "^4.0.1",
+    "truffle-contract": "^3.0.1",
+    "watchify": "~3.9.0",
+    "web3": "^1.0.0-beta.26",
+    "zeppelin-solidity": "^1.3.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "stage-2",
+            "stage-3"
+          ]
+        }
+      ]
+    ]
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "truffle develop"
+  },
+  "author": "ngo275",
+  "license": "ISC"
+}
